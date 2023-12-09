@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+  <body>
+    <h1>Welcome to Login Page</h1>
+    <form id="login">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="username" placeholder="Email">
+      <br>
+      <br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password">
+      <br>
+      <br>
+      <input type="submit" value="Login">
+    </form>
+    <script>
+      const form = document.getElementById('login');
+      form.addEventListener("submit" , (event)=>{
+        event.preventDefault();
+        form.style.display = "none";
+        document.querySelector('h1').innerText="Successfully logged in";
+      })
+    </script>
+  </body>
+</html>

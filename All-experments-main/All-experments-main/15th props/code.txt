@@ -1,0 +1,32 @@
+//Student.js
+import React from "react";
+
+function Student (props) {
+    return(
+        <div>
+            <h1>Name: {props.name}</h1>
+
+            <p>Marks: {props.marks}</p>
+        </div>
+    )
+}
+
+export default Student
+
+
+//App.js
+import React from 'react';
+import './App.css';
+import Student from './Students';
+
+function App(){
+  return(
+    <div>
+      <Student name="Alice" marks={85} />
+
+      <Student name="Karthik" marks={100} />
+    </div>
+  )
+}
+
+export default App
